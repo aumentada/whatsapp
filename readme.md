@@ -19,8 +19,16 @@
 
 Version Desktop:
 
+![Desktop](img/desktop.png)
+
 
 Version Mobile:
 
+![Mobile](img/mobile.png)
+
 
 - **Prototipo en Figma** (alta fidelidad)
+
+![figma](img/figma.png)
+
+[figmachat](https://www.figma.com/file/N4J3RWTBjRvj1EOiEliX0P/whatschat?node-id=1-2&t=NYunIrAFWHPGnEf3-0)
