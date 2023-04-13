@@ -19,8 +19,14 @@
 
 Version Desktop:
 
+![Desktop](img/desktop.png)
+
 
 Version Mobile:
 
+![Mobile](img/mobile.png)
+
 
 - **Prototipo en Figma** (alta fidelidad)
+
+![figma](img/figma.png)
