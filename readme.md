@@ -30,3 +30,5 @@ Version Mobile:
 - **Prototipo en Figma** (alta fidelidad)
 
 ![figma](img/figma.png)
+
+[figmachat](https://www.figma.com/file/N4J3RWTBjRvj1EOiEliX0P/whatschat?node-id=1-2&t=NYunIrAFWHPGnEf3-0)
