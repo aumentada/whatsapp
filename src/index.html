@@ -5,6 +5,50 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>whatsappea sin guardar contacto</title>
+    <style>
+        *{
+            margin: 0%;
+            padding: 0%;
+        }
+        header{
+            width: 100%;
+        }
+        #logo{
+            max-width: 100%;
+            display: flex;
+            justify-content: center;
+
+        }
+        #logo img{
+            margin: 0%;
+            max-width: 80%;
+        }
+        #description{
+            width: 100%;
+            text-align: center;
+            padding-bottom: 20%;
+        }
+
+        #search{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding-bottom:10%;
+        }
+        input{
+            height: 40px;
+            width: 200px;
+            margin-bottom: 4%;
+            border-radius:0 6px 6px 0px ;
+        }
+        button{
+            height: 35px;
+            width: 120px;
+            border-radius: 15px;
+        }
+        
+    </style>
   </head>
   <body>
     <header>
@@ -22,8 +66,12 @@
         <p>Chatea en WhatsApp sin necesidad de agregar como contacto</p>
       </div>
       <div id="search">
-        <input type="text" name="cellphone number" placeholder="310xxxxxx">
+        <div id="srh-input">
+            <input type="text" name="cellphone number" placeholder="310xxxxxx">
+        </div>
+        <div id="srh-btn">
         <button type="button" id="btn-chat" class="btn" onclick="alert('¡Chatea!')">Chat</button>
+        </div>
       </div>
     </section>
   </body>
