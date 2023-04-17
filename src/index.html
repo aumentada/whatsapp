@@ -9,6 +9,7 @@
     <link rel="icon" type="image/x-icon" href="img/favicon.ico">
     <link rel="apple-touch-icon" href="img/ios/192.png">
     <link rel='manifest' href='manifest.json'>
+
     <title>whatsappea sin guardar contacto</title>
     <style>
         *{
@@ -95,7 +96,7 @@
       <div id="header">
         <div id="logo">
             <img
-            src="/img/Whatsappea-removebg-preview.png" alt="logo de la aplicación"
+            src="img/logo.png" alt="logo de la aplicación"
         />
         </div>
         
@@ -124,7 +125,16 @@
         <a href="https://www.linkedin.com/in/santiaguf/"> Santiago Bernal.</a>
       </strong>
   </footer>
-  <script type="text/javascript">
+  <script defer type="text/javascript">
+    if ("serviceWorker" in navigator) {
+      window.addEventListener("load", function() {
+          navigator.serviceWorker
+          .register("/serviceWorker.js")
+          .then(res => console.log("service worker registered"))
+          .catch(err => console.log("service worker not registered", err))
+      })
+    }
+
     const btnChat = document.getElementById('btn-chat');
     const numberInput = document.getElementById('numberInput');
     btnChat.addEventListener('click', () => {
