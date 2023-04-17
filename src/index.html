@@ -44,6 +44,7 @@
             width: 200px;
             margin-bottom: 4%;
             border-radius:0 6px 6px 0px ;
+            font-size: 1em;
         }
         button{
             background-color: #4CA16C;
@@ -76,6 +77,10 @@
           input{
             width:300px;
             height: 50px;
+            font-size:2em;
+          }
+          footer{
+            font-size: 1.5em;
           }
 
         }
@@ -99,14 +104,13 @@
       </div>
       <div id="search">
         <div id="srh-input">
-            <input type="number" name="cellphone-number" placeholder="310xxxxxx">
+            <input id="numberInput" type="number" name="cellphone-number" placeholder="310xxxxxx" required="required">
         </div>
         <div id="srh-btn">
         <button type="button" id="btn-chat" class="btn" >Chat</button>
         </div>
       </div>
     </section>
-  </body>
   <footer>
     Creado con fines didácticos para 
     <strong> <a href="https://aumentada.net/">Aumentada</a> </strong> Soluciones Informaticas <br> <strong>
@@ -117,4 +121,15 @@
         <a href="https://www.linkedin.com/in/santiaguf/"> Santiago Bernal.</a>
       </strong>
   </footer>
+  <script type="text/javascript">
+    const btnChat = document.getElementById('btn-chat');
+    const numberInput = document.getElementById('numberInput');
+    btnChat.addEventListener('click', () => {
+        const number = `57${numberInput.value}`;
+        if (number.length > 0) {
+            window.open(`https://wa.me/${number}`);
+        }
+    });
+  </script>
+</body>
 </html>
